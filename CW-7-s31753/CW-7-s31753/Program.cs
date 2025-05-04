@@ -15,7 +15,6 @@ builder.Services.AddSwaggerGen(c =>
     c.SwaggerDoc("v1", new OpenApiInfo { 
         Title = "Travel Agency API", 
         Version = "v1",
-        Description = "API for managing travel agency operations" 
     });
 });
 
@@ -23,6 +22,14 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddSingleton<DbConnection>();
 builder.Services.AddScoped<ITripRepository, TripRepository>();
 builder.Services.AddValidatorsFromAssemblyContaining<ClientValidator>(ServiceLifetime.Scoped);
+
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenLocalhost(7244, listenOptions =>
+    {
+        listenOptions.UseHttps();
+    });
+});
 
 var app = builder.Build();
 
