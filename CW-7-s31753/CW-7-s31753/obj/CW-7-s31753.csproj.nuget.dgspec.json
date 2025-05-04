@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\Desktop\\CW-7-s31753\\CW-7-s31753\\CW-7-s31753.csproj": {}
+    "C:\\Users\\admin\\Desktop\\REPOcw7\\CW-7-s31753\\CW-7-s31753\\CW-7-s31753\\CW-7-s31753.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\Desktop\\CW-7-s31753\\CW-7-s31753\\CW-7-s31753.csproj": {
+    "C:\\Users\\admin\\Desktop\\REPOcw7\\CW-7-s31753\\CW-7-s31753\\CW-7-s31753\\CW-7-s31753.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Desktop\\CW-7-s31753\\CW-7-s31753\\CW-7-s31753.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\Desktop\\REPOcw7\\CW-7-s31753\\CW-7-s31753\\CW-7-s31753\\CW-7-s31753.csproj",
         "projectName": "CW-7-s31753",
-        "projectPath": "C:\\Users\\admin\\Desktop\\CW-7-s31753\\CW-7-s31753\\CW-7-s31753.csproj",
+        "projectPath": "C:\\Users\\admin\\Desktop\\REPOcw7\\CW-7-s31753\\CW-7-s31753\\CW-7-s31753\\CW-7-s31753.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Desktop\\CW-7-s31753\\CW-7-s31753\\obj\\",
+        "outputPath": "C:\\Users\\admin\\Desktop\\REPOcw7\\CW-7-s31753\\CW-7-s31753\\CW-7-s31753\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
