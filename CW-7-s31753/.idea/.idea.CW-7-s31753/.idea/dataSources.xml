@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="Microsoft SQL Server LocalDB (JetBrains)" uuid="4a29303f-e5eb-4393-bf2d-8366680e42db">
-      <driver-ref>sqlserver.localdb.jb</driver-ref>
+    <data-source source="LOCAL" name="Microsoft SQL Server (JetBrains)" uuid="7732a636-147f-4fb9-ae5a-d4ea3a77fc1d">
+      <driver-ref>sqlserver.jb</driver-ref>
       <synchronize>true</synchronize>
       <configured-by-url>true</configured-by-url>
       <jdbc-driver>com.jetbrains.jdbc.sqlserver.SqlServerDriver</jdbc-driver>
