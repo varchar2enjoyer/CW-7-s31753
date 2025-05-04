@@ -1,13 +1,10 @@
-﻿using FluentValidation;
-using Microsoft.Data.SqlClient;
-using Microsoft.OpenApi.Models;
-using CW_7_s31753.Models;
+﻿using CW_7_s31753.Models;
 using CW_7_s31753.Repositories;
 using CW_7_s31753.Validators;
 using CW_7_s31753.Database;
-using System;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.OpenApi.Models;
+using FluentValidation;
+using Microsoft.Data.SqlClient;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,7 +22,7 @@ builder.Services.AddSwaggerGen(c =>
 // Register dependencies
 builder.Services.AddSingleton<DbConnection>();
 builder.Services.AddScoped<ITripRepository, TripRepository>();
-builder.Services.AddValidatorsFromAssemblyContaining<ClientValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<ClientValidator>(ServiceLifetime.Scoped);
 
 var app = builder.Build();
 
@@ -61,10 +58,11 @@ app.MapGet("/api/trips", async (ITripRepository repo) =>
     return Results.Ok(trips);
 })
 .WithName("GetAllTrips")
-.WithOpenApi(operation => new(operation)
+.WithOpenApi(operation =>
 {
-    Summary = "Get all available trips",
-    Description = "Returns all trips with their details and associated countries"
+    operation.Summary = "Get all available trips";
+    operation.Description = "Returns all trips with their details";
+    return operation;
 });
 
 app.MapGet("/api/clients/{id:int}/trips", async (int id, ITripRepository repo) =>

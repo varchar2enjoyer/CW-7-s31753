@@ -1,5 +1,5 @@
 ﻿namespace CW_7_s31753.Models
-{
+{ 
     public class ClientTrip
     {
         public int ClientId { get; set; }

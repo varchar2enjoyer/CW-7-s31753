@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using CW_7_s31753.Models;
+﻿using CW_7_s31753.Models; 
 
 namespace CW_7_s31753.Repositories
 {

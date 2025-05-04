@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-using CW_7_s31753.Models;
+using CW_7_s31753.Models; 
 
 namespace CW_7_s31753.Validators
 {

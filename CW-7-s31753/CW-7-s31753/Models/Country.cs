@@ -1,4 +1,4 @@
-﻿namespace CW_7_s31753.Models
+﻿namespace CW_7_s31753.Models 
 {
     public class Country
     {
